@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Armas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let componente of guia">
+    <ion-card-header>
+      {{componente.nombre}}
+    </ion-card-header>
+    <ion-card-content>
+     
+     
+     Daño: {{componente.dano}} <p>
+
+      </p>
+     Afilado: {{componente.afilado}} <p>
+
+     </p>
+     Elemento: {{componente.elemento}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
